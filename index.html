@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God of War</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2 {
+            color: #ff6600;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        form button {
+            background-color: #ff6600;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #e65c00;
+        }
+        .btn {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e65c00;
+        }
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>God of War</h1>
+    </header>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">Об игре</a>
+        <a href="#gameplay">Геймплей</a>
+        <a href="#characters">Персонажи</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#requirements">Системные требования</a>
+        <a href="#feedback">Обратная связь</a>
+    </nav>
+    <section id="home">
+        <h2>Добро пожаловать в мир God of War</h2>
+        <p>Окунитесь в эпическое приключение Кратоса и его сына Атрея в мире скандинавской мифологии.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/God_of_War_4_cover.jpg/220px-God_of_War_4_cover.jpg" alt="God of War Cover" style="width: 100%; max-width: 300px;">
+        <button class="btn" onclick="window.open('https://www.playstation.com/en-us/god-of-war/', '_blank')">Официальный сайт</button>
+    </section>
+    <section id="about">
+        <h2>Об игре</h2>
+        <p>God of War — это экшен-адвенчура, разработанная Santa Monica Studio и выпущенная Sony Interactive Entertainment. Игра является перезапуском серии и продолжает историю Кратоса, который теперь живет в мире скандинавских богов.</p>
+        <p>Игра получила множество наград, включая "Игра года" на The Game Awards 2018.</p>
+        <button class="btn" onclick="window.open('https://en.wikipedia.org/wiki/God_of_War_(2018_video_game)', '_blank')">Узнать больше</button>
+    </section>
+    <section id="gameplay">
+        <h2>Геймплей</h2>
+        <p>Игра предлагает захватывающий боевой геймплей, исследование мира и глубокую историю. Кратос использует свой легендарный топор Левиафан, чтобы сражаться с врагами и решать головоломки.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K0u_kAWLJOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="btn" onclick="window.open('https://www.youtube.com/watch?v=K0u_kAWLJOA', '_blank')">Смотреть трейлер</button>
+    </section>
+    <section id="characters">
+        <h2>Персонажи</h2>
+        <p>Основные персонажи игры:</p>
+        <ul>
+            <li><strong>Кратос</strong> — бывший бог войны, который пытается начать новую жизнь.</li>
+            <li><strong>Атрей</strong> — сын Кратоса, который сопровождает его в путешествии.</li>
+            <li><strong>Мимир</strong> — мудрый советник, который помогает Кратосу и Атрею.</li>
+            <li><strong>Фрейя</strong> — могущественная богиня, которая играет важную роль в сюжете.</li>
+        </ul>
+        <button class="btn" onclick="window.open('https://godofwar.fandom.com/wiki/Characters', '_blank')">Все персонажи</button>
+    </section>
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="https://4kwallpapers.com/images/walls/thumbs_3t/8635.jpg" alt="God of War Screenshot 1">
+            <img src="https://4kwallpapers.com/images/walls/thumbs_3t/10630.jpg" alt="God of War Screenshot 2">
+            <img src="https://avatars.mds.yandex.net/i?id=460163c5027650c8370d25721167b58e_l-5236752-images-thumbs&n=13" alt="God of War Screenshot 3">
+        </div>
+        <button class="btn" onclick="window.open('https://www.artstation.com/artwork/god-of-war', '_blank')">Больше артов</button>
+    </section>
+    <section id="requirements">
+        <h2>Системные требования</h2>
+        <p>Минимальные системные требования для PC:</p>
+        <ul>
+            <li>ОС: Windows 10 (64-bit)</li>
+            <li>Процессор: Intel i5-2500k / AMD Ryzen 3 1200</li>
+            <li>Оперативная память: 8 GB</li>
+            <li>Видеокарта: NVIDIA GTX 960 / AMD R9 290X</li>
+            <li>Место на диске: 70 GB</li>
+        </ul>
+        <button class="btn" onclick="window.open('https://www.systemrequirementslab.com/cyri/requirements/god-of-war/19777', '_blank')">Проверить требования</button>
+    </section>
+    <section id="feedback">
+        <h2>Обратная связь</h2>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 God of War Fan Page. Все права защищены.</p>
+    </footer>
+</body>
+</html>
